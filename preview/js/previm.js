@@ -14,7 +14,7 @@
   };
 
   function transform(filetype, content) {
-    if(hasTargetFileType(filetype, ['markdown', 'mkd'])) {
+    if(hasTargetFileType(filetype, ['markdown', 'mkd', 'workflowish'])) {
       return marked(content, { renderer: marked_renderer });
     } else if(hasTargetFileType(filetype, ['rst'])) {
       // It has already been converted by rst2html.py
